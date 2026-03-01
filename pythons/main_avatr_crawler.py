@@ -263,7 +263,7 @@ def main():
     print(f"Database created: {db_path}")
     
     # 步骤2: 抓取线索数据
-    print("🔍 Fetching clue data...")
+    print("Fetching clue data...")
     total_clues = extract_clues_data(TOKEN, db_path)
     
     if total_clues == 0:
@@ -274,7 +274,7 @@ def main():
     
     # 步骤3: 获取所有clueNo
     clue_nos = get_all_clue_nos(db_path)
-    print(f"📋 Found {len(clue_nos)} clues to process for follow-up records")
+    print(f"Found {len(clue_nos)} clues to process for follow-up records")
     
     # 步骤4: 抓取跟进记录
     print("Fetching follow-up records...")
