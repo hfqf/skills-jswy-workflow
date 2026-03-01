@@ -17,7 +17,8 @@ def get_auth_headers(token):
 
 def get_current_date_range():
     """获取当前日期范围"""
-    today = datetime.now().strftime("%Y-%m-%d")
+    # today = datetime.now().strftime("%Y-%m-%d")
+    today = "2026-03-01" 
     start_time = f"{today} 00:00:00"
     end_time = f"{today} 23:59:59"
     return start_time, end_time
