@@ -250,40 +250,40 @@ def extract_follow_up_records(clue_nos, token, db_path):
 
 def main():
     """主执行函数"""
-    print("🚀 Starting Avatr clue extraction...")
+    print("Starting Avatr clue extraction...")
     
     # 检查token是否已设置
     if TOKEN == "YOUR_ACTUAL_TOKEN_HERE":
-        print("❌ Error: Please replace TOKEN with your actual token from browser cookies")
+        print("Error: Please replace TOKEN with your actual token from browser cookies")
         print("   Get token by executing: document.cookie in browser console")
         return
     
     # 步骤1: 创建数据库
     db_path = create_database()
-    print(f"✅ Database created: {db_path}")
+    print(f"Database created: {db_path}")
     
     # 步骤2: 抓取线索数据
     print("🔍 Fetching clue data...")
     total_clues = extract_clues_data(TOKEN, db_path)
     
     if total_clues == 0:
-        print("⚠️  No clue data retrieved")
+        print("No clue data retrieved")
         return
     
-    print(f"✅ Successfully extracted {total_clues} clues!")
+    print(f"Successfully extracted {total_clues} clues!")
     
     # 步骤3: 获取所有clueNo
     clue_nos = get_all_clue_nos(db_path)
     print(f"📋 Found {len(clue_nos)} clues to process for follow-up records")
     
     # 步骤4: 抓取跟进记录
-    print("🔍 Fetching follow-up records...")
+    print("Fetching follow-up records...")
     total_records = extract_follow_up_records(clue_nos, TOKEN, db_path)
     
-    print(f"✅ Follow-up records extraction completed!")
-    print(f"📊 Total records: {total_records}")
-    print(f"📁 Database location: {db_path}")
-    print("🎉 Complete extraction finished!")
+    print(f"Follow-up records extraction completed!")
+    print(f"Total records: {total_records}")
+    print(f"Database location: {db_path}")
+    print("Complete extraction finished!")
 
 if __name__ == "__main__":
     main()

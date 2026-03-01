@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 
 # 从浏览器获取的token
-token = "eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI3MDQ2ODk3NjJAcXEuY29tIiwic3ViIjoiYm9zcyIsInNvdXJjZSI6InRoaXJkX2xvZ2luX3NvdXJjZV8wIiwiZXhwIjoxNzc0OTU2MTMzfQ.-RI90BTfq1AOGNt2GnUH04bFWxZ5PpuS4yY9Bn_nhVI"
+token = ""
 
 def get_auth_headers(token):
     """获取认证headers"""
