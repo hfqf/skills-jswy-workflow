@@ -87,7 +87,7 @@ pip install requests
 #### 方法一：执行完整流程（推荐）
 ```bash
 # 进入工作目录
-cd C:\Users\01\.openclaw\workspace
+cd ./skills-jswy-workflow
 
 # 执行完整的阿维塔爬虫流程
 python pythons/main_avatr_crawler.py
@@ -176,7 +176,7 @@ SELECT clueNo, COUNT(*) FROM follow_records GROUP BY clueNo HAVING COUNT(*) > 1;
 ```
 开始阿维塔线索抓取流程...
 ✅ 获取到token: eyJhbGciOiJIUzI1NiJ9...
-✅ 数据库创建成功: C:\Users\01\Desktop\clues.db
+✅ 数据库创建成功: ./clues.db
 🔍 开始抓取线索数据...
 第1页，获取10条数据
 第2页，获取10条数据  
@@ -189,7 +189,7 @@ SELECT clueNo, COUNT(*) FROM follow_records GROUP BY clueNo HAVING COUNT(*) > 1;
 ✅ 完整抓取完成！
 📊 线索数据: 28 条
 📊 跟进记录: 28 条
-📁 数据库位置: C:\Users\01\Desktop\clues.db
+📁 数据库位置: ./clues.db
 ```
 
 ---

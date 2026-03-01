@@ -95,9 +95,7 @@ def extract_follow_up_records(clue_nos, token, db_path):
 def main():
     """主执行函数"""
     print("Starting follow-up records extraction...")
-    
-    desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
-    db_path = os.path.join(desktop_path, 'clues.db')
+    db_path = os.path.join(os.getcwd(), 'clues.db')
     
     # 获取所有clueNo
     clue_nos = get_all_clue_nos(db_path)

@@ -24,8 +24,7 @@ def get_current_date_range():
 
 def create_database():
     """创建SQLite数据库和表"""
-    desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
-    db_path = os.path.join(desktop_path, 'clues.db')
+    db_path = os.path.join(os.getcwd(), 'clues.db')
     
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
