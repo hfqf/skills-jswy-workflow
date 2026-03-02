@@ -13,7 +13,7 @@ from datetime import datetime
 
 # 注意：实际使用时需要从浏览器获取最新的token
 # 这里只是一个示例token，需要替换为实际有效的token
-TOKEN = "YOUR_ACTUAL_TOKEN_HERE"
+TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI3MDQ2ODk3NjJAcXEuY29tIiwic3ViIjoiYm9zcyIsInNvdXJjZSI6InRoaXJkX2xvZ2luX3NvdXJjZV8wIiwiZXhwIjoxNzc1MDEzNzcwfQ.AtaUw-SzQiM_XD6t0t2V5W8najv5AR7-BvVBw4c6--Y"
 
 def get_auth_headers(token):
     """获取认证headers"""

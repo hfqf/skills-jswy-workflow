@@ -48,8 +48,8 @@
 
  3. 验证浏览器启动成功
      - 返回状态显示 running: true, cdpReady: true
-     - 获得了独立的浏览器实例ID: 04628E27F1DB47E138DCEE6B724BA0A 6
- 4. 导航到目标网站
+     - 获得了独立的浏览器实例ID: 04628E27F1DB47E138DCEE6B724BA0A6
+ 4. 自动导航到目标网站
  ```bash
      browser action=navigate targetUrl="https://admin.avatr.com/" profile="openclaw"
  ```
